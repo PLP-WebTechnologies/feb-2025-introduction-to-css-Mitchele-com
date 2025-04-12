@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="main-title">Welcome to My Styled Page</h1>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="#">Home</a></li>
+                <li><a class="nav-link" href="#">About</a></li>
+                <li><a class="nav-link" href="#">Services</a></li>
+                <li><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="placeholder-image.jpg" alt="A beautiful image">
+            <div class="hero-text">
+                <h2>This is the Hero Section</h2>
+                <p class="introduction">Learn more about our amazing offerings and how we can help you achieve your goals.</p>
+                <button class="call-to-action">Get Started</button>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="article">
+                <h3>First Article</h3>
+                <p>This is the first article with some interesting content. We are using a different font for this paragraph to improve readability.</p>
+                <ul>
+                    <li>Item one</li>
+                    <li>Item two</li>
+                    <li>Item three</li>
+                </ul>
+            </div>
+
+            <div class="article" id="second-article">
+                <h3>Second Article</h3>
+                <p>This is the second article with even more captivating information. Notice the borders around this section.</p>
+                <ol>
+                    <li>First step</li>
+                    <li>Second step</li>
+                    <li>Third step</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Styled Page</p>
+    </footer>
+
+</body>
+</html>
+
+/* style.css */
+
+/* Element Selector */
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ID Selector */
+#main-title {
+    color: navy;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#second-article {
+    border: 2px solid #ccc;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Class Selector */
+.nav-link {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-color: #e9ecef;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.hero img {
+    max-width: 300px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text h2 {
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.introduction {
+    font-family: serif; /* Different font */
+    margin-bottom: 20px;
+}
+
+.call-to-action {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.call-to-action:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+.article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.article h3 {
+    color: #dc3545;
+    margin-bottom: 10px;
+}
+
+.article ul, .article ol {
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #343a40;
+    color: white;
+    border-radius: 5px;
+}
+
